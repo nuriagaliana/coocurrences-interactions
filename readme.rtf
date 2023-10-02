@@ -1,0 +1,49 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Verdana;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18740\viewh14640\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 This repository contains all data and code used in the manuscript entitled: \
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \expnd0\expndtw0\kerning0
+From species co-occurrences to interactions: the emergence of power-law degree distributions.\cf2 \
+\
+Nuria Galiana, Jean-Fran\'e7ois Arnoldi, Frederico Mestre, Alejandro Rozenfeld, Miguel B. Araujo.\
+\
+Date Created: 05-08-2022\
+\
+Email: galiana.nuria@gmail.com\
+\
+In this README file we describe the contents of the archive (i.e. files and folders contained here) \
+and provide a brief description of how the source code scripts should be executed. \
+\
+DATA FILES:\
+The archive is organised into a series of folders each containing the raw data and source code appropriate\
+for analysing that data set. The folder have been named according to the names of each data set. Thus, for example, the folder title 'Salix\'92 contains the raw data for the raw data in the Salix dataset as well as the script used to process those data in order to construct networks of realised interactions and co-occurrence interactions. Within each folder named after the corresponding dataset, a subfolder named 'raw-data' contains the actual data. Please notice that the format of each raw dataset is different, and therefore, the code needed to read each dataset is also different. \
+Specification of data format per dataset:\
+Garraf PP, Garraf PP2, Garraf HP, Olot, Montseny: raw data formatted in spreadsheets where each sheet has the information of the network of biotic interactions of each spatial unit of the dataset.\
+Gottin PP: raw data in the file \'91plant_poll_all_interactions.csv\'92.Spatial units are defined in the column \'91Site\'92; plant species are defined in the column \'91\cf0 P.Genus.Species\'92; pollinator species are defined in the column \'91Genus.Species\'92.\cf2 \
+Gottin HP: raw data in the file \'91host_para_all_interactions.csv\'92. Spatial units are defined in the column \'91Site\'92; host species are defined in column \'91\cf0 Genus.Species\'92; parasitoid species are defined in column \'91P1.Species.Genus\'92.\
+Nahuel: raw data formatted as .txt files where each file describes the matrix of biotic interactions of each spatial unit.\
+Quercus: raw data formatted as spreadsheet file where each file describes the matrix of biotic interactions of each spatial unit.\
+Galpar: the format of this data is explained in detail in: K\cf3 opelke, J. P. et al. Food-web structure of willow-galling sawflies and their natural enemies across Europe. Ecology 98, 1730 (2017). \cf2 \
+\
+SOURCE CODE FILES:\
+1.- 'data_processing_occurrence.r\'92: Within each dataset folder, a script called 'data_processing_occurrencer' is provided. \
+This script contains the code necessary to read and process the raw data for each dataset and generate the realised and the co-occurrence networks. \
+2.- 'data-analysis_occurrence.r\'92: This script, located within the parent folder, reads the output files from each of the \
+datasets and produces the figures and performs the statistical analyses presented in the paper. \
+3.- 'utils.r': An additional script containing a series of food web property measurement functions is provided\
+to aid with the calculations of network properties across datasets. This script is sourced from the \
+'data_processing_occurrence.r\'92 files above.\
+\
+\
+Additionally, we provide .csv files with the outputs of the already processed data in case you want to directly produce \
+the figures or perform the analyses without having to generate the realised and the co-occurrence networks. Therefore, in each data folder you will find, for instance, \'91network_real_pred_garraf-PP.csv\'92 for the realised networks and \'91network_coocurrence_pred_garraf-PP.csv\'92 for the co-occurrence networks, both from the predators perspective. These .csv files are read in the \'91data-analysis_occurrence.r\'92 source code to perform the analyses.\
+\
+
+\f1\fs24 \
+If you have any questions / run into any issues, please contact galiana.nuria@gmail.com}
