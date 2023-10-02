@@ -2,9 +2,11 @@ Power-laws in species' biotic interaction networks can be inferred from co-occur
 
 This repository contains all raw data and code used in the above manuscript from authors
 
-Nuria Galiana, Jean-François Arnoldi, Frederico Mestre, Alejandro Rozenfeld, Miguel B. Araujo.
+Nuria Galiana, Jean-FranÃ§ois Arnoldi, Frederico Mestre, Alejandro Rozenfeld, Miguel B. Araujo.
 
 Date Created: 05-08-2022s
+
+Code DOI: https://doi.org/10.5281/zenodo.8399873
 
 Email: galiana.nuria@gmail.com
 
